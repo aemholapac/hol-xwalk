@@ -245,10 +245,20 @@ main .section.highlight {
 /* -------------------------------------------------------------------------------- */
 /* added by tekaneko for HOL */
 .hero-section {
-  padding: 0px;
+  padding: 0px !important;
   position: relative;
   background: linear-gradient(103deg, rgb(30, 141, 222) 0%, rgb(20, 88, 145) 100%);
   color: white;
+
+  .columns-wrapper {
+    max-width: unset !important;
+
+    .columns {
+      div>div {
+        padding-left: 40px;
+      }
+    }
+  }
 }
 
 .columns-img-col picture img {
