@@ -249,13 +249,12 @@ main .section.highlight {
   position: relative;
   background: linear-gradient(103deg, rgb(30, 141, 222) 0%, rgb(20, 88, 145) 100%);
   color: white;
-
-  picture img {
-    height: 560px !important;
-    object-fit: cover;
-  }
 }
 
+.columns-img-col picture img {
+  height: 560px !important;
+  object-fit: cover;
+}
 
 .section:has(.teaser-hero) {
   padding: 0px;
