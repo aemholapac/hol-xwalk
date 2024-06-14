@@ -283,6 +283,16 @@ main .section.highlight {
 
 @media (width < 600px) {
   .hero-section {
+    .columns {
+      flex-wrap: wrap-reverse;
+
+      .columns-img-col {
+        p {
+          margin: 0px;
+        }
+      }
+    }
+
     .columns>div>div:not(.columns-img-col) {
       padding: 0px 20px;
     }
