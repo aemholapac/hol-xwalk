@@ -258,13 +258,48 @@ main .section.highlight {
         padding-left: 40px;
       }
     }
+
+    .button-container>.button {
+      background-color: unset;
+      border-radius: 20px;
+      font-size: 17px;
+      font-weight: 100;
+      line-height: 20px;
+      min-height: 21px;
+      padding: 7px 18px 8px;
+      border-color: white;
+    }
+
+  }
+
+  .columns-img-col picture img {
+    height: 560px !important;
+    object-fit: cover;
+  }
+
+
+
+}
+
+@media (width < 600px) {
+  .hero-section {
+    .columns>div>div:not(.columns-img-col) {
+      padding: 0px 20px;
+    }
+
+    .columns>div>.columns-img-col {
+      padding-left: 0px;
+    }
   }
 }
 
-.columns-img-col picture img {
-  height: 560px !important;
-  object-fit: cover;
-}
+
+
+
+
+
+
+
 
 .section:has(.teaser-hero) {
   padding: 0px;
